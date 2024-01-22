@@ -1,0 +1,92 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+R13.1 Terms
+Recursion in programming refers to a technique where a function calls itself in order to solve a problem.
+Iteration is a process in which a set of instructions or statements is executed repeatedly for a specified number of
+times or until a certain condition is met.
+Infinite recursion occurs when the recursive function doesn't have a proper base case, or the base case is never reached
+due to incorrect logic.
+A recursive helper method is a technique often used in recursive programming where an additional method is created to
+assist the main recursive method.
+
+R13.2 Smallest value
+Base Case: if the length of the array == 1, return the array[0]
+Else: return the minimum value of array[0] and the return value of the function given the input of array[1:]
+
+R13.4 Sort array of numbers
+Base Case: if the length of the array == 1, return
+Else: find the min value in the array, swap it with the first value int the array, and run the function on the subarray
+excluding the first element.
+
+R13.6 Exponents recursively
+class Power {
+    public static void main(String[] args) {
+        System.out.println(power(2, 10));
+    }
+    private static int power(int x, int n) {
+        if (n == 0) {
+            return 1;
+        }
+        return x * power(x, n-1);
+    }
+}
+
+R13.8 Factorial recursively
+class Factorial {
+    public static void main(String[] args) {
+        System.out.println(factorial(5));
+    }
+    private static int factorial(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        return n * factorial(n-1);
+    }
+}
+
+R19.1 operations on Stream<String>
+long count = Arrays.stream(array)
+        .filter(s -> s.startsWith("a")).count();
+long count = Arrays.stream(array)
+        .filter(s -> s.length() > 10)
+        .filter(s -> s.startsWith("a"))
+        .count();
+boolean areThere100 = Arrays.stream(array)
+        .filter(s -> s.startsWith("a"))
+        .limit(100)
+        .count() == 100;
+
+R19.3 How to read Java8
+The key difference lies in the order of filtering and limiting operations. In the first case, it filters
+first and then limits; in the second case, it limits first and then filters. This can lead to different results.
+
+R19.6 Transforming values
+Stream<String> stringStream = Arrays.stream(array)
+        .map(s -> s.toString());
+
+Stream<Double> doubleStream = stringStream
+        .map(s -> Double.parseDouble(s));
+
+R19.11 Terminal operations
+findFirst
+findAny
+max
+min
+forEach
+toArray
+collect
+allMatch
+anyMatch
+noneMatch
+
+R19.12 Collectors
+Collectors.toList()
+Collectors.toSet()
+Collectors.joining(", ")
+Collectors.groupingBy(
+ keyFunction, collector)
+
+
+
+

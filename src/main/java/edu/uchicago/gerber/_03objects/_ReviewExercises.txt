@@ -1,0 +1,61 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R8.1 Encapsulation
+Encapsulation is one of the four fundamental Object-Oriented Programming (OOP) concepts, alongside inheritance, polymorphism,
+and abstraction. It refers to the practice of bundling the data (attributes) and the methods (functions) that operate on
+the data into a single unit, which is called a class in Java. Encapsulation essentially hides the internal details of an
+object and provides a well-defined interface for interacting with it.
+
+R8.4 Public interface
+The public interface of a class, often referred to as the "public API" or "public contract," represents the set of methods
+and fields that are accessible and intended for use by other code outside of the class. It defines how external code can
+interact with the class and its objects. The public interface encapsulates the essential functionalities that a class
+provides to its users.
+In contrast, the implementation of a class includes all the internal details, private fields, and methods that are not
+meant to be exposed to external code. These implementation details are used to achieve the functionality defined in the
+public interface.
+
+R8.7 Instance versus static
+An instance method is associated with an instance or object of the class. It can access and manipulate the instance-specific
+data (i.e., the fields or attributes of an object).
+A static method is associated with the class itself rather than with instances of the class. It cannot access or modify
+instance-specific data because it doesn't have a reference to a particular object.
+
+R8.8 Mutator and accessor
+Mutator methods (setters) are used to modify the state of an object's attributes, while accessor methods (getters) are
+used to retrieve the current state of those attributes without allowing direct modification. These methods play a key
+role in encapsulation, as they control how an object's internal state can be manipulated and accessed by external code.
+
+R8.9 Implicit parameter
+Explicit parameters are values that you directly pass to a function when calling it, while implicit parameters are not
+explicitly passed but are determined from the context or external factors.
+
+R8.10 Implicit parameter
+Instance methods in Java have one implicit parameter (this), which refers to the current object, and they can have any
+number of explicit parameters. Static methods do not have implicit parameters, but like instance methods, they can have
+any number of explicit parameters.
+
+R8.12 Constructors
+In Java, a class can have multiple constructors, and there is no strict limit to the number of constructors a class can have.
+It is possible to have a class with no constructors explicitly defined. In such cases, Java provides a default no-argument constructor.
+If a class has multiple constructors, the specific constructor that gets called depends on the arguments provided when an
+object is created.
+
+R8.16 Instance variables
+While it's true that the private keyword doesn't completely hide the existence of these members, it effectively restricts
+access and separates the public interface (what external code can use) from the private implementation details.
+
+R8.19 The 'this' reference
+The 'this' reference in Java is a valuable tool for working with instance variables, disambiguating variable names,
+passing the current object to other methods, and more. It helps you make clear and precise references to instance-specific
+elements, and it's commonly used in various programming scenarios to maintain clarity and control over the current object's
+behavior.
+
+R8.20 Zero, null, false, empty String
+The number zero represents a numerical value, the null reference represents the absence of an object reference, the value
+false represents a Boolean "false" condition, and the empty string represents a string with no characters.
+
+
+

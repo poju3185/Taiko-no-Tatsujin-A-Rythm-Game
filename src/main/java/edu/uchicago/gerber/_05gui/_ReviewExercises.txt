@@ -1,0 +1,71 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+R10.5 Events
+An event object encapsulates information about a specific event. This event can be something like a button being clicked,
+a key being pressed, or a mouse being moved.
+The event source is the object on which the event originates or occurs. It's responsible for generating the event object.
+An event listener is an interface (or a functional interface in modern Java) that defines methods that respond to certain events.
+
+R10.6 actionPerformed
+The actionPerformed method of an event listener is called by the Java Event Dispatching Thread (EDT).
+The call to the actionPerformed method occurs after the event has been generated and placed into the event queue, and
+when the EDT retrieves and processes it.
+
+R10.11 Inner class and event-listeners
+public class InvestmentFrame extends JFrame {
+    ...
+    public void addInterest() {
+        double interest = balance * INTEREST_RATE / 100;
+        balance = balance + interest;
+        resultLabel.setText("Balance: " + balance);
+    }
+}
+class AddInterestListener implements ActionListener {
+    private InvestmentFrame frame;
+
+    public AddInterestListener(InvestmentFrame frame) {
+        this.frame = frame;
+    }
+
+    public void actionPerformed(ActionEvent event) {
+        frame.addInterest();
+    }
+}
+
+R10.14 Object hierarchies
+Method that is declared in JTextArea: getUIClassID
+Method that JTextArea inherits from JTextComponent: addCaretListener
+Method that JTextArea inherits from JComponent: safelyGetGraphics
+
+R10.22 Graphic methods
+Instead of hard coding g.setColor(Color.GREEN), use a variable, e.g. g.setColor(leftColor)
+
+R11.2 Layout managers
+Adaptability: GUIs designed with layout managers can adjust better to changes in size. If a user resizes the window,
+the layout manager can reposition and resize the components to fit the available space, maintaining the intended design
+and relationships between components.
+
+R11.11 ButtonGroup
+ButtonGroup is used with radio buttons to enforce their fundamental behavior of mutual exclusivity. In contrast,
+checkboxes are designed for independent selections, so there's no need for such a grouping mechanism.
+
+R11.19 Types of Events
+They cater to different types of interactions and are used in different scenarios within a GUI application.
+
+R11.20 Events
+ActionEvent Object: Command String, Source Object, ID, Modifiers
+MouseEvent Object: Coordinates, Button Information, Click Count, Modifiers, Dragged Position, Mouse Entered/Exited Component
+
+R11.21 ActionListener versus MouseListener
+ActionListener: This interface is used to respond to a simple, high-level action performed on a GUI component. Most commonly,
+this is associated with a button being clicked. Given the straightforward nature of this action, there's only one method,
+
+MouseListener: Mouse interactions are more nuanced. A mouse can be clicked, pressed, released, entered into a component's
+area, or exited from a component's area. Each of these interactions might require a different response, so the MouseListener
+interface provides five methods to handle these different events separately:
+
+
+
+
+

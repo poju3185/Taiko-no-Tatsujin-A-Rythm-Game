@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.uchicago.gerber._04interfaces.R9_8</OriginalElement>
+  <nodes>
+    <node x="806.0" y="67.0">edu.uchicago.gerber._04interfaces.R9_8.Car</node>
+    <node x="200.0" y="67.0">edu.uchicago.gerber._04interfaces.R9_8.Motorcycle</node>
+    <node x="329.75" y="-18.0">edu.uchicago.gerber._04interfaces.R9_8.Vehicle</node>
+    <node x="649.0" y="67.0">edu.uchicago.gerber._04interfaces.R9_8.Minivan</node>
+    <node x="-88.0" y="67.0">edu.uchicago.gerber._04interfaces.R9_8.Truck</node>
+    <node x="863.25" y="152.0">edu.uchicago.gerber._04interfaces.R9_8.Coupe</node>
+    <node x="49.0" y="67.0">edu.uchicago.gerber._04interfaces.R9_8.Bicycle</node>
+    <node x="389.0" y="67.0">edu.uchicago.gerber._04interfaces.R9_8.SportUtilityVehicle</node>
+    <node x="720.25" y="152.0">edu.uchicago.gerber._04interfaces.R9_8.Sedan</node>
+    <node x="-120.0" y="152.0">edu.uchicago.gerber._04interfaces.R9_8.PickupTruck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.uchicago.gerber._04interfaces.R9_8.Sedan" target="edu.uchicago.gerber._04interfaces.R9_8.Car" relationship="GENERALIZATION">
+      <point x="0.0" y="-17.5" />
+      <point x="781.75" y="127.0" />
+      <point x="854.0" y="127.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="edu.uchicago.gerber._04interfaces.R9_8.Coupe" target="edu.uchicago.gerber._04interfaces.R9_8.Car" relationship="GENERALIZATION">
+      <point x="0.0" y="-17.5" />
+      <point x="926.25" y="127.0" />
+      <point x="854.0" y="127.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="edu.uchicago.gerber._04interfaces.R9_8.Motorcycle" target="edu.uchicago.gerber._04interfaces.R9_8.Vehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-17.5" />
+      <point x="284.5" y="42.0" />
+      <point x="396.75" y="42.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="edu.uchicago.gerber._04interfaces.R9_8.Bicycle" target="edu.uchicago.gerber._04interfaces.R9_8.Vehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-17.5" />
+      <point x="114.5" y="42.0" />
+      <point x="396.75" y="42.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="edu.uchicago.gerber._04interfaces.R9_8.Car" target="edu.uchicago.gerber._04interfaces.R9_8.Vehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-17.5" />
+      <point x="854.0" y="42.0" />
+      <point x="396.75" y="42.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="edu.uchicago.gerber._04interfaces.R9_8.SportUtilityVehicle" target="edu.uchicago.gerber._04interfaces.R9_8.Vehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-17.5" />
+      <point x="509.0" y="42.0" />
+      <point x="396.75" y="42.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="edu.uchicago.gerber._04interfaces.R9_8.Truck" target="edu.uchicago.gerber._04interfaces.R9_8.Vehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-17.5" />
+      <point x="-29.5" y="42.0" />
+      <point x="396.75" y="42.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="edu.uchicago.gerber._04interfaces.R9_8.Minivan" target="edu.uchicago.gerber._04interfaces.R9_8.Vehicle" relationship="GENERALIZATION">
+      <point x="0.0" y="-17.5" />
+      <point x="717.5" y="42.0" />
+      <point x="396.75" y="42.0" />
+      <point x="0.0" y="17.5" />
+    </edge>
+    <edge source="edu.uchicago.gerber._04interfaces.R9_8.PickupTruck" target="edu.uchicago.gerber._04interfaces.R9_8.Truck" relationship="GENERALIZATION">
+      <point x="0.0" y="-17.5" />
+      <point x="0.0" y="17.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.184070796460177" showDependencies="false" x="445.0" y="94.49999999999994" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

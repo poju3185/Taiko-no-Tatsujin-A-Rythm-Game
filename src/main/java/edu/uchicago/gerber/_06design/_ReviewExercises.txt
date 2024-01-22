@@ -1,0 +1,97 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R12.1 OO Analysis and Design
+• Start the development process by gathering and documenting program requirements.
+• Use CRC cards to find classes, responsibilities, and collaborators.
+• Use UML diagrams to record class relationships.
+• Use javadoc comments (with the method bodies left blank) to record the behavior of classes.
+• After completing the design, implement your classes.
+
+R12.2 OO Analysis and Design
+Look for nouns in the problem description.
+
+R12.3 OO Analysis and Design
+Look for verbs in the problem description.
+
+R12.8 Relationships
+Card 1: Coin
+Class: Coin
+Responsibilities:
+
+1. Store the value of the coin.
+2. Store the name of the coin.
+3. Provide the value of the coin when requested.
+Collaborations:
+
+CashRegister (CashRegister may query Coin for its value)
+
+Card 2: CashRegister
+Class: CashRegister
+Responsibilities:
+
+1. Record the payment in terms of the number of coins and type of coin.
+
+Coin (CashRegister needs to know the value of the coin)
+
+R12.9 CRC Quiz
+Card 1: Question
+Class: Question
+Responsibilities:
+Store the content or text of the question.
+Collaborations:
+Quiz (Quiz contains and manages multiple Questions)
+
+Card 2: Quiz
+Class: Quiz
+Responsibilities:
+Store a collection of questions.
+Collaborations:
+Question (Quiz uses Question to present quizzes and validate answers)
+
+R12.10 UML Quiz
+The path of the UML is ./UML/R12_10.jpeg
+
+R12.11 CRC Cards
+Card 1: Country
+Class: Country
+Responsibilities:
+1. Store the name of the country.
+2. Store the population of the country.
+3. Store the area of the country.
+4. Calculate the population density.
+Collaborations:
+CountryAnalyzer
+
+Card 2: CountryAnalyzer
+Class: CountryAnalyzer
+Responsibilities:
+1. Read in a set of countries from a file.
+2. Find the country with the largest area.
+3. Find the country with the largest population.
+4. Find the country with the largest population density.
+Collaborations:
+Country
+
+The path of the UML is ./UML/R12_12.jpeg
+
+R12.13 UML Diagram
+1. Coin: Represents individual coins with a denomination and value.
+2. Product: Represents individual products available for purchase.
+3. VendingMachine: Represents the vending machine itself. It handles the main logic of accepting coins, selecting products,
+dispensing products, and returning change or coins.
+The path of the UML is ./UML/R12_13.jpeg
+
+R12.14 UML Diagram
+1. Employee: Represents individual employees.
+2. Payroll: Represents the process of calculating and dispensing paychecks for all employees.
+3. OvertimeCalculator: Helper/utility class or method to handle overtime calculations.
+The path of the UML is ./UML/R12_14.jpeg
+
+R12.15 ULM Diagram
+The path of the UML is ./UML/R12_15.jpeg
+
+
+
+

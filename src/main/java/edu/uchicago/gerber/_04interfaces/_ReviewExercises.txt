@@ -1,0 +1,62 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R9.1 Superclass and subclass
+The following are superclasses, the others are subclasses
+a. Employee
+b. Student
+c. Person
+d. Employee
+e. BankAccount
+f. Vehicle
+g. Vehicle
+h. Car
+i. Vehicle
+
+R9.2 superclass and subclass
+1. Limited Commonality:
+Each specific type of small appliance might have very distinct attributes and behaviors, with limited commonality between them.
+2. Complex Hierarchy:
+For every new type of small appliance added, a new subclass would need to be created. This can lead to a bloated and
+hard-to-maintain class structure.
+3. Inflexibility:
+The rigid subclass structure might make the system inflexible.
+
+R9.4 SavingsAccount
+inherit: deposit, getBalance
+override: withdraw, monthEnd
+new: setInterestRate
+
+R9.6 Sandwich
+a, d are legal.
+
+R9.7 Inheretence -use the UML diagram tool in IntelliJ and indicate to the grader where uml file is located
+The R9_7.uml file is in the package R9_7
+
+R9.8 Inheretence -use the UML diagram tool in IntelliJ and indicate to the grader where uml file is located
+The R9_8.uml file is in the package R9_8
+
+R9.9 Inheretence -use the UML diagram tool in IntelliJ and indicate to the grader where uml file is located
+The R9_9.uml file is in the package R9_9
+
+R9.10 Casting
+Casting primitives is about converting values between different types and potentially losing data or precision in the process.
+Casting reference types is about changing the reference, not the object itself, and ensuring the object being referred
+to is indeed of the type (or subtype) you're casting to.
+
+R9.11 instanceof operator
+a. True
+b. True
+c. False
+d. True
+e. True
+f. False
+
+R9.14 Edible interface
+a, c, h
+
+
+
+
+
